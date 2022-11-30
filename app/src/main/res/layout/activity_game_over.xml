@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game_over">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/over_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/degrad_red">
+
+        <RelativeLayout
+            android:id="@+id/over_Layout_score"
+            android:layout_width="210dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/over_circle_image"
+
+
+            android:background="@drawable/rounded"
+            app:layout_constraintBottom_toTopOf="@+id/over_circle_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/over_score"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/over_new_best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/over_Layout_score"
+            android:text="Nouveau Record !"
+            android:textAlignment="center"
+            android:textColor="#900C3F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/lineHorizontal3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/over_Layout_score"
+            tools:ignore="MissingConstraints"
+            android:visibility="gone"
+            />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/lineHorizontal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".30" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/over_circle_image"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/snk1_img"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ProgressBar
+            android:id="@+id/over_Progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            app:layout_constraintBottom_toTopOf="@+id/lineHorizontal1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/over_circle_image"
+            tools:ignore="MissingConstraints"></ProgressBar>
+
+        <ImageView
+            android:id="@+id/over_img_menu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:src="@drawable/img_menu"
+
+            app:layout_constraintLeft_toRightOf="@id/lineVertical1"
+            app:layout_constraintTop_toBottomOf="@id/lineHorizontal1"
+
+            tools:ignore="MissingConstraints">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/over_img_rejouer"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/img_rejouer"
+            app:layout_constraintRight_toRightOf="@id/lineVertical2"
+            app:layout_constraintTop_toBottomOf="@id/lineHorizontal2"
+
+            tools:ignore="MissingConstraints">
+
+
+        </ImageView>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/lineHorizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".87" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/lineHorizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".88" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/lineVertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".03" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/lineVertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".97" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

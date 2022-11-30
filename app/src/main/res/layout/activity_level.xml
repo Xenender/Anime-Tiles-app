@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrad_pink_blue"
+    tools:context=".level">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/degrad_pink_blue">
+
+
+        <LinearLayout
+            android:id="@+id/layoutFail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25">
+
+
+                <Button
+                    android:id="@+id/note1Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".27"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".45"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note11Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".27"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".45"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+
+                <Button
+                    android:id="@+id/note111Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".27"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note111"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".45"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+
+                <Button
+                    android:id="@+id/long1Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/degrad_black_blue"
+                    app:layout_constraintHeight_percent=".82"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/long1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".999"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/didact_long1Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/degrad_black_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/guideline2"
+                    app:layout_constraintHeight_percent=".82"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <TextView
+                    android:id="@+id/textLong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="note longue"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/didact_long1Img"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+                    />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent=".50"/>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/border"
+
+                >
+
+                <Button
+                    android:id="@+id/startBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".27"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@color/black"
+                    android:text="Start"
+                    android:textColor="@color/white"
+                    android:visibility="visible"></Button>
+
+                <Button
+                    android:id="@+id/note2Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".27"
+                    android:background="@color/black"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".45"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note22Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".27"
+                    android:background="@color/black"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note22"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".45"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+
+                <Button
+                    android:id="@+id/note222Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".27"
+                    android:background="@color/black"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note222"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".45"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+
+                <Button
+                    android:id="@+id/long2Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".82"
+                    android:background="@drawable/degrad_black_blue"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/long2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".999"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/border"
+
+                >
+
+
+                <Button
+                    android:id="@+id/note3Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".27"
+                    android:background="@color/black"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".45"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note33Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".27"
+                    android:background="@color/black"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note33"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".45"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+
+                <Button
+                    android:id="@+id/note333Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".27"
+                    android:background="@color/black"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note333"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".45"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+
+                <Button
+                    android:id="@+id/long3Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".82"
+                    android:background="@drawable/degrad_black_blue"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/long3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent=".999"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"
+
+                    ></Button>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/border"
+
+                >
+
+
+                <Button
+                    android:id="@+id/note4Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".27"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".45"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/didact_note4Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/lineDidact"
+                    app:layout_constraintHeight_percent=".27"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+
+                <Button
+                    android:id="@+id/note44Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".27"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note44"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".45"
+                    tools:ignore="MissingConstraints"></Button>
+
+
+                <Button
+                    android:id="@+id/note444Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".27"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/note444"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".45"
+                    tools:ignore="MissingConstraints"></Button>
+
+
+                <Button
+                    android:id="@+id/long4Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/degrad_black_blue"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".82"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <Button
+                    android:id="@+id/long4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    app:layout_constraintHeight_percent=".999"
+                    tools:ignore="MissingConstraints"
+
+                    ></Button>
+
+                <TextView
+                    android:id="@+id/textShort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="note courte"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/didact_note4Img"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone"/>
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/lineDidact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent=".34"
+                    />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textColor="#900C3F"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/didact_text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Bienvenue dans AnimeTiles !"
+            android:textAlignment="center"
+            android:fontFamily="@font/helvetica_bold"
+            android:textColor="#900C3F"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/custom_progress_bar" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

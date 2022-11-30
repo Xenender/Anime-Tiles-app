@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listLvl"
+    android:background="@drawable/degrad_pink_blue"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:text="Liste des niveaux"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/para"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/engrenage" />
+
+            <Button
+                android:id="@+id/param"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:background="@android:color/transparent">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp" />
+
+            <Button
+                android:id="@+id/layout_para"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#40000000"
+                android:visibility="gone"></Button>
+
+        </RelativeLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/paraLayout"
+            android:layout_width="400dp"
+            android:layout_height="225dp"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/layout_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="paramètres"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@+id/guideText1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                >
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/textVibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Vibrations"
+                android:textAlignment="center"
+                android:textColor="#FFE4E4E4"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="@id/guideText1"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <Switch
+                android:id="@+id/vibra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:checked="true"
+                android:textColor="#D3D3D3"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textVibrate"
+                tools:ignore="MissingConstraints"
+
+                android:thumb="@drawable/customswitchselector"
+                android:track="@drawable/custom_track"
+                />
+
+            <TextView
+                android:id="@+id/textRepet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="répétition des niveaux"
+                android:textAlignment="center"
+                android:textColor="#FFE4E4E4"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideText2"
+                tools:ignore="MissingConstraints"></TextView>
+
+            <Switch
+
+                android:id="@+id/repet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:text=""
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textRepet"
+                tools:ignore="MissingConstraints"
+
+                android:thumb="@drawable/customswitchselector"
+                android:track="@drawable/custom_track"
+                />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".18"/>
+            <android.support.constraint.Guideline
+                android:id="@+id/guideText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".58"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="percent_note">.45</dimen>
+    <dimen name="percent_noteImg">.27</dimen>
+    <dimen name="percent_long">.999</dimen>
+    <dimen name="percent_longImg">82dp</dimen>
+
+</resources>
